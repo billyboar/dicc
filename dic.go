@@ -9,10 +9,6 @@ import (
 	"strings"
 )
 
-func PrintHelpMessage() {
-	fmt.Println("Please enter the word you want to search")
-}
-
 const BASE_URL = "http://dictionary.reference.com/browse/%s?s=t"
 const TAG_NAME = "def-content"
 const TAG_END = "</div>"
@@ -101,7 +97,7 @@ func SearchFromArray(array []byte, element byte, start_pos int) int {
 
 func main() {
 	if len(os.Args) <= 1 {
-		PrintHelpMessage()
+		fmt.Println("Please enter the word you want to search")
 		return
 	}
 
