@@ -51,7 +51,6 @@ func kmpSearch(text []byte, pat string) (results []int) {
 		}
 
 		if l == pat_length {
-			fmt.Printf("Found at %d\n", i-l+1)
 			results = append(results, i-l+1)
 			l = prefixArray[l-1]
 		} else if pat[l] != text[i] {
