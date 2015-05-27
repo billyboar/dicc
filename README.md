@@ -1,4 +1,4 @@
-# dicc
+# Dicc
 Online dictionary for terminal enviroment. 
 
 #To Use
