@@ -1,5 +1,5 @@
 # Dicc
-Online dictionary for terminal enviroment. 
+Online dictionary for terminal environment. 
 
 #To Use
 If you already have Go installed, you can easily make it easily executable by:
