@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 
 	"io/ioutil"
 	"net/http"
@@ -117,6 +118,8 @@ func main() {
 		fmt.Println("There is an error: ", err)
 		return
 	}
+
+	fmt.Println(time.Now())
 
 	word_res := kmpSearch(body, TAG_NAME)
 	if len(word_res) == 0 {
